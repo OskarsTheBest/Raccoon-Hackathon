@@ -1,13 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lato';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Lato'
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.header span { 
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-day {
+  margin: 0px 10px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #4d7c0f;
+  padding: 0.8rem 1.5rem;
+  color: #f7fee7;
+}
+
+.sidebar span {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.sidebar-links {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 87%;
+}
+
+.sidebar-link {
+  color: #f7fee7;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.logout-link {
+  color: #ef4444;
+  
+}
+
+.sidebar-link:hover {
+  background-color: #3f6212;
+}
+
+.sidebar-link span {
+  font-size: 1rem;
+}
+
+.main {
+  width: 100%;
+  background-color: #f7fee7;
 }
