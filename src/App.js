@@ -7,6 +7,7 @@ const App = () => {
     <div className='main'>
       <Header />
       <Map />
+      <div className='screenshot-container'>Check your forest</div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaTree, FaSignOutAlt, FaRegSun, FaRegQuestionCircle } from 'react-icons/fa';
-import CalendarComponent from './CalendarComponent';
+import { FaTree, FaSignOutAlt, FaRegSun, FaRegQuestionCircle, FaUserTie } from 'react-icons/fa';
+import MyCalendar from './CalendarComponent';
 
 const Sidebar = () => {
   return (
@@ -8,10 +8,17 @@ const Sidebar = () => {
         <FaTree/>
         <span>Forest Guard</span>
 
+
+
         <div className='sidebar-links'>
           <div className='sidebar-top-links'>
-            <CalendarComponent />
+          <MyCalendar />
+          <a href='/' className='sidebar-link mt'>
+                <FaUserTie />
+                <span>Reach out to authorities</span>
+                </a>
           </div>
+          
             <div className='sidebar-bottom-links'>
             <a href='/' className='sidebar-link'>
                 <FaRegQuestionCircle />

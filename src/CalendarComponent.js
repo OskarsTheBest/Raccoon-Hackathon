@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import Calendar from 'react-calendar';
+import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
 
-function CalendarComponent() {
+function MyCalendar() {
   const [value, onChange] = useState(new Date());
-
+  
   return (
     <div>
-      <Calendar onChange={onChange} value={value} />
+      <CalendarComponent /> 
     </div>
   );
 }
 
-export default CalendarComponent;
+export default MyCalendar;

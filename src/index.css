@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "../node_modules/@syncfusion/ej2/material.css";
 
 body {
   margin: 0;
@@ -96,4 +97,26 @@ code {
 .main {
   width: 100%;
   background-color: #f7fee7;
+}
+
+.calendar-component {
+  color: #4d7c0f;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+.location {
+  background-color: #454545;
+  width: 100%;
+  height: 100%;
+}
+
+.screenshot-container {
+  position: absolute;
+  top: 90%;
+  z-index: 2;
+  margin-left: 20px;
+  padding: 10px 20px;
 }
