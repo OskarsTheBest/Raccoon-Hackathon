@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       <div className='sidebar-title'>
         <FaTree/>
-        <span>Forest Guard</span>
+        <span>ForestMon</span>
       </div>
 
         <div className='sidebar-links'>

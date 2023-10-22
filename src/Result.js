@@ -1,26 +1,32 @@
-import React from 'react'
+import React from "react";
 
-const Result = () => {
- return (
-    <div className='result'>
-        <h1>Analysis Review</h1>
-        <div className='result-content'>
-        <img src='./test2.png' />
+const Result = ({ price, area }) => {
+  return (
+    <div className="result">
+      <h1>Analysis Review</h1>
+      <div className="result-content">
+        <img src="./test2.png" />
         <div>
-        <p>Total Forest Area: <span className='result-text'>1502m2</span> </p>
-        <p>You can protect your forest only in <span className='result-text'>15€</span></p>
+          <p>
+            Total Forest Area: <span className="result-text">{area}m2</span>{" "}
+          </p>
+          <p>
+            You only have to pay<span className="result-text">{price}€</span> to get
+            notifications in case somebody tries to do illegal deforestation at
+            your property
+          </p>
         </div>
-        <div className='result-btn-container'>
-            <div className='result-btn'>
-                <span>Protect my forest</span>
-            </div>
-            <div className='result-btn result-btn-cancel'>
-                <span>Cancel</span>
-            </div>
+        <div className="result-btn-container">
+          <div className="result-btn result-btn-cancel">
+            <span>Cancel</span>
+          </div>
+          <div className="result-btn">
+            <span>Subscribe</span>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Result
+export default Result;

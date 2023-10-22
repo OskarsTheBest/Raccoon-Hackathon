@@ -232,7 +232,7 @@ code {
 
 .result-content img {
   width: 600px;
-  height: 300px;
+  height: 260px;
 } 
 
 .loader {
@@ -245,6 +245,8 @@ code {
 
 .result-btn-container {
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .result-btn {
