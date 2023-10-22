@@ -53,13 +53,20 @@ code {
 
 .sidebar {
   width: 20%;
-  background-color: #4d7c0f;
-  padding: 0.8rem 1.5rem;
+  background-image: url('./static/tree-sidebar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.8rem 1.8rem;
   color: #f7fee7;
 }
-
+.sidebar-title{
+  color: darkgreen;
+}
+.side-icons{
+  padding: 0rem 1.5rem;
+}
 .sidebar span {
-  font-size: 25px;
+  font-size: 27px;
   margin-left: 10px;
 }
 
@@ -70,24 +77,30 @@ code {
   justify-content: space-between;
   height: 87%;
 }
-
 .sidebar-link {
   color: #f7fee7;
   text-decoration: none;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 0.5rem;
   border-radius: 10px;
+  background-color: #3f6212e1;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.sidebar-link span {
+  font-size: 1rem;
+}
+.sidebar-link:hover {
+  background-color: #2b420c;
+  transform: scale(1.05);
 }
 
 .logout-link {
   color: #ef4444;
-  
-}
-
-.sidebar-link:hover {
-  background-color: #3f6212;
+  background-color: #2b420c;
+  font-size: 1.2rem;
 }
 
 .sidebar-link span {
