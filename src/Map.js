@@ -42,7 +42,7 @@ const Map = () => {
         />
       )}
 
-      {data && <Result price={price} area={area} />}
+      {data && <Result price={data.price} area={data.area} img={data.img} />}
     </div>
   );
 };

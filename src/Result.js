@@ -1,11 +1,11 @@
 import React from "react";
 
-const Result = ({ price, area }) => {
+const Result = ({ price, area, img }) => {
   return (
     <div className="result">
       <h1>Analysis Review</h1>
       <div className="result-content">
-        <img src="./test2.png" />
+        <img src={img} />
         <div>
           <p>
             Total Forest Area: <span className="result-text">{area}m2</span>{" "}
