@@ -1,4 +1,6 @@
+import base64
 import functools
+import io
 import warnings
 import cv2
 import numpy as np
@@ -103,14 +105,14 @@ class ForestMask:
         warnings.filterwarnings("ignore")
 
         try:
-            image_pil = Image.open(image).convert("RGB")
+            image_pil = image.convert("RGB")
 
             model = LangSAM()
             masks, boxes, phrases, logits = model.predict(image_pil, 'tree', box_threshold=0.25)
 
             masks_np = [mask.squeeze().cpu().numpy() for mask in masks]
             mask = functools.reduce(lambda m0, m1: np.where(m1 == 0, m0, m1), masks_np)
-            # ForestMask.save_mask(mask, "forest_mask.png")
+            ForestMask.save_mask(mask, "forest_mask.png")
 
             return_image, return_area = ForestMask.display_image_with_masks(image_pil, mask, masks)
 
